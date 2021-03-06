@@ -1,0 +1,142 @@
+body{
+    font-family: 'Akaya Telivigala', cursive;
+
+}
+
+ul{
+  background-color: rgb(214, 121, 121);
+}
+li{
+  display:inline-block;
+  font-size: 30px;
+  margin-left: 200px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  
+
+
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.dropbtn {
+ 
+  font-family: 'Akaya Telivigala', cursive;
+  padding: 16px;
+  font-size: 30px;
+  color: white;
+  border: none;
+  margin-left: 120px;
+  background-color: rgb(214, 121, 121);
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 120px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px black;
+  z-index: 1;
+  margin-left: 120px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+h1{
+    text-align: center;
+    margin-top: 40px;
+
+color: black;
+padding-top: 25px;
+    
+}
+
+p{
+  font-size: 20px;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+
+}
+
+.amman-grid{
+  
+    display:inline-grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 160px 60px;
+    grid-gap: 480px;
+    margin-left: 60px;
+   
+    
+}
+
+
+.amman-grid-item{
+ width: 500px;
+  height: 450px;
+
+  }
+
+
+
+
+    .footer{
+          
+        background-color:rgb(214, 121, 121);
+        margin-top: 500px;
+      
+    }
+
+    h3{
+        text-align: center;
+      padding-top: 20px;
+    }
+
+    .icons{
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+
+    }
+
+    #git{
+
+      background-color: rgb(214, 121, 121);
+padding-right: 10px;
+      width: 40px;
+      height: 30px;
+    }
+
+    #linked{
+      background-color: rgb(214, 121, 121);
+
+      width: 40px;
+      height: 30px;
+    }
+
+    #facebook{
+      background-color: rgb(214, 121, 121);
+      
+      width: 40px;
+      height: 30px;
+    }
