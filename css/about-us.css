@@ -16,6 +16,7 @@ h1{
 ul{
     background-color:white;
   }
+
   li{
     display:inline-block;
     font-size: 30px;
@@ -73,18 +74,52 @@ ul{
   
   .dropdown:hover .dropdown-content {display: block;}
 
+ 
+
   #grid-container{
-      display: grid;
-      grid-template-columns: 600px 100px;
-      text-align: center;
-      font-size: 30px;
+    display: grid;
+    grid-template-columns: 600px 100px;
+    box-shadow: 0 4px 8px 0  white(0,0,0,0.2);
+    transition: 1.3s;
+    background-color: white;
+    width: 420px;
+    height: 520px;
+    border-radius: 20px solid white;
+    margin-left: 30px;
+
   }
 
-  .me{
-      margin-left:160px;
-      margin-top:50px;
-      border-radius: 50%;
+  #grid-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
   }
+
+  
+img {
+  border-radius: 5px;
+  width: 420px;
+}
+
+h4{
+  margin-left: 40px;
+}
+
+button{
+  margin-left: 40px;
+  
+}
+
+#about-me-p{
+  width: 450px;
+  margin-left: 200px;
+  margin-bottom: 900px;
+  font-size: 30px;
+}
+
+.card {
+  padding: 2px 16px;
+  border-radius: 20px solid white;
+}
 
   .hobbies{
       display: flex;

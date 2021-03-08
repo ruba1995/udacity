@@ -71,11 +71,12 @@ padding-top: 25px;
     
 }
 
-p{
+blockquote{
   font-size: 20px;
   flex: 70%;
   background-color: white;
   padding: 20px;
+  font-size: 20px;
 
 }
 
@@ -83,7 +84,7 @@ p{
   
     display:inline-grid;
     grid-template-columns: 60px 60px 60px;
-    grid-template-rows: 160px 60px;
+
     grid-gap: 480px;
     margin-left: 60px;
    
@@ -97,13 +98,72 @@ p{
 
   }
 
+  
+
+  #caption{
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 15px;
+    padding-left: 60px;
+  }
+
+  #caption-one{
+    display: inline-block;
+    font-size: 30px;
+    padding-left: 350px;
+  }
+
+  #caption-two{
+    display: inline-block;
+    font-size: 30px;
+    padding-left: 450px;
+  }
+
+  .amman-grid-two{
+    display:inline-grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-gap: 480px;
+    margin-left: 60px;
+    padding-top: 20px;
+  }
+
+     #caption-three{
+    font-size: 30px;
+    margin-top: 20px;
+   margin-left: 60px;
+   width: 300px;
+
+  } 
+
+  #caption-four{
+    
+    display: inline-block;
+    font-size: 30px;
+    padding-left: 650px;
+ margin-bottom: 20px;
+  }
+
+  #caption-five{
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 15px;
+    padding-left: 320px;
+
+  }   
+
+  /* .caption{
+    display: grid;
+    grid-template-rows: 60px ;
+    grid-gap: 80px;
+  } */
+
 
 
 
     .footer{
           
         background-color:rgb(214, 121, 121);
-        margin-top: 500px;
+        margin-top: 10px;
       
     }
 
@@ -140,3 +200,4 @@ padding-right: 10px;
       width: 40px;
       height: 30px;
     }
+

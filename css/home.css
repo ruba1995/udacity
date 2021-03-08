@@ -1,11 +1,17 @@
+@import url(amman.css);
+@import url(about-us.css);
+@import url(wadi-rum.css);
+
 body{
     font-family: 'Akaya Telivigala', cursive;
+  
 }
 
 h1{
     text-align: center;
     margin-top: 40px;
 }
+
 ul {
     background-color: rgb(122, 240, 122);
 }
@@ -17,6 +23,15 @@ li{
     margin-bottom: 30px;
 
   
+}
+
+@media(max-width:900px){
+
+  li{
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 a{
@@ -31,6 +46,7 @@ a{
     padding: 16px;
     font-size: 30px;
     border: none;
+    color: black;
     margin-left: 120px;
     background-color: rgb(122, 240, 122);
 
@@ -119,4 +135,4 @@ a{
     width: 40px;
       height: 30px;
 }
- 
+
