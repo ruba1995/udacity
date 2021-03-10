@@ -1,9 +1,24 @@
-body{
+ body{
     font-family: 'Akaya Telivigala', cursive;
 
 }
 
+h1{
+  text-align: center;
+  margin-top: 40px;
+grid-area: title;
+color: black;
+padding-top: 25px;
+  
+}
+
+
+#list{
+  grid-area:nav;
+}
+
 ul{
+ 
   background-color: rgb(214, 121, 121);
 }
 li{
@@ -16,6 +31,7 @@ li{
 
 
 }
+
 
 a{
   text-decoration: none;
@@ -62,16 +78,9 @@ a{
 
 .dropdown:hover .dropdown-content {display: block;}
 
-h1{
-    text-align: center;
-    margin-top: 40px;
-
-color: black;
-padding-top: 25px;
-    
-}
 
 blockquote{
+  grid-area: p;
   font-size: 20px;
   flex: 70%;
   background-color: white;
@@ -87,6 +96,7 @@ blockquote{
 
     grid-gap: 480px;
     margin-left: 60px;
+    grid-area: jordan-img;
    
     
 }
@@ -105,18 +115,23 @@ blockquote{
     font-size: 30px;
     margin-top: 15px;
     padding-left: 60px;
+    grid-area: jordan-img;
   }
 
   #caption-one{
     display: inline-block;
     font-size: 30px;
     padding-left: 350px;
+    grid-area: jordan-img;
+
   }
 
   #caption-two{
     display: inline-block;
     font-size: 30px;
     padding-left: 450px;
+    grid-area: jordan-img;
+
   }
 
   .amman-grid-two{
@@ -125,6 +140,8 @@ blockquote{
     grid-gap: 480px;
     margin-left: 60px;
     padding-top: 20px;
+    grid-area: jordan-img;
+
   }
 
      #caption-three{
@@ -132,6 +149,8 @@ blockquote{
     margin-top: 20px;
    margin-left: 60px;
    width: 300px;
+   grid-area: jordan-img;
+
 
   } 
 
@@ -141,6 +160,8 @@ blockquote{
     font-size: 30px;
     padding-left: 650px;
  margin-bottom: 20px;
+ grid-area: jordan-img;
+
   }
 
   #caption-five{
@@ -148,6 +169,8 @@ blockquote{
     font-size: 30px;
     margin-top: 15px;
     padding-left: 320px;
+    grid-area: jordan-img;
+
 
   }   
 
@@ -164,7 +187,7 @@ blockquote{
           
         background-color:rgb(214, 121, 121);
         margin-top: 10px;
-      
+        grid-area: fo ;
     }
 
     h3{
@@ -200,4 +223,33 @@ padding-right: 10px;
       width: 40px;
       height: 30px;
     }
+    #container{
+
+      display: grid;
+      height: 60hv;
+      grid-template-columns:1670px ;
+      grid-template-rows:50px ;
+      grid-template-areas: 
+      "title"
+      "nav"
+      "p"
+      "jordan-img"
+      "fo";
+  }
+  
+  
+  
+  @media (max-width:600px){
+    #container{
+      display: grid;
+      grid-template-columns: 600px ;
+      grid-template-rows: 50px ;
+      grid-template-areas: 
+      "title title title title title title title "
+      "nav nav nav nav nav nav nav "
+      " p p p p p p p "
+      "jordan-img jordan-img jordan-img jordan-img jordan-img jordan-img jordan-img"
+      "fo fo fo fo fo fo fo";
+    }
+  }
 

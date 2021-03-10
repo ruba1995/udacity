@@ -6,6 +6,7 @@ body{
 h1{
     text-align: center;
     margin-top: 40px;
+    grid-area: title;
 }
 
 .me{
@@ -13,44 +14,63 @@ h1{
     height: 410px;
 }
 
-ul{
-    background-color:white;
-  }
+h1{
+  grid-area: title;
+    text-align: center;
+    margin-top: 40px;
+}
 
-  li{
+ul {
+    background-color:white;
+   
+}
+
+#list{
+  display:nav;
+  display: grid;
+  grid-template-columns: 400px 420px 400px;
+  grid-template-rows: 130px;
+  
+
+}
+
+li{
     display:inline-block;
+   
     font-size: 30px;
     margin-left: 200px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    
+    margin-top: 30px;
+    margin-bottom: 20px;
+
   
-  
-  }
-  
-  a{
+}
+
+
+
+a{
     text-decoration: none;
     color: black;
-  }
-  
-  
-  .dropbtn {
+}
+
+
+.dropbtn {
    
     font-family: 'Akaya Telivigala', cursive;
     padding: 16px;
+    margin-left: 15px;
     font-size: 30px;
-    color: black;
     border: none;
+    color: black;
     margin-left: 120px;
-    background-color:white;
-    
-  
+    background-color: white;
+
   }
   
   .dropdown {
     position: relative;
     display: inline-block;
     margin-left: 120px;
+    background-color: white;
   }
   
   .dropdown-content {
@@ -58,7 +78,7 @@ ul{
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     margin-left: 120px;
   }
@@ -73,12 +93,15 @@ ul{
   .dropdown-content a:hover {background-color: #ddd;}
   
   .dropdown:hover .dropdown-content {display: block;}
+  
+  /* .dropdown:hover .dropbtn {background-color: #868b86;} */
 
  
 
   #grid-container{
     display: grid;
     grid-template-columns: 600px 100px;
+    grid-template-rows: 100px ;
     box-shadow: 0 4px 8px 0  white(0,0,0,0.2);
     transition: 1.3s;
     background-color: white;
@@ -98,6 +121,7 @@ ul{
 img {
   border-radius: 5px;
   width: 420px;
+  
 }
 
 h4{
@@ -109,19 +133,26 @@ button{
   
 }
 
+
+
 #about-me-p{
   width: 450px;
-  margin-left: 200px;
+  margin-left: 150px;
   margin-bottom: 900px;
   font-size: 30px;
+  grid-area: p;
+ 
+
 }
 
 .card {
   padding: 2px 16px;
   border-radius: 20px solid white;
+  grid-area: my-card;
 }
 
   .hobbies{
+    grid-area: hobbies;
       display: flex;
       flex-direction: row;
   }
@@ -131,12 +162,14 @@ button{
       border-radius: 5px;
       border: white solid 3px;
       padding-left: 220px;
+      width: 100%;
   }
 
 
   
 
   .footer{
+    grid-area: fo;
           
     background-color:white;
     margin-top: 100px;
@@ -175,4 +208,37 @@ padding-right: 10px;
   
   width: 40px;
   height: 30px;
+}
+
+
+#container{
+
+  display: grid;
+  height: 60hv;
+  grid-template-columns: 1670px ;
+   grid-template-rows:50px ;
+  grid-template-areas: 
+  "title"
+  "nav"
+  " my-card p"
+ 
+  "hobbies"
+  "fo";
+ 
+}
+
+
+
+@media (max-width:600px){
+#container{
+  display: grid;
+  grid-template-columns: 600px  600px;
+  grid-template-rows: 50px ;
+  grid-template-areas: 
+  "title title title title title title title "
+  "nav nav nav nav nav nav nav "
+  " my-card my-card my-card p p p p  "
+  " hobbies hobbies hobbies hobbies hobbies hobbies hobbies"
+  "fo fo fo fo fo fo fo";
+}
 }

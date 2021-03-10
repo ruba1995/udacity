@@ -2,37 +2,43 @@
 @import url(about-us.css);
 @import url(wadi-rum.css);
 
+
+
 body{
     font-family: 'Akaya Telivigala', cursive;
+    background-color: white;
   
 }
 
 h1{
+  grid-area: title;
     text-align: center;
     margin-top: 40px;
 }
 
 ul {
     background-color: rgb(122, 240, 122);
+   
 }
+
+#list{
+  display:nav;
+  
+
+}
+
 li{
     display:inline-block;
+   
     font-size: 30px;
     margin-left: 200px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 
   
 }
 
-@media(max-width:900px){
 
-  li{
-    display: flex;
-    flex-direction: column;
-  }
-
-}
 
 a{
     text-decoration: none;
@@ -44,6 +50,7 @@ a{
    
     font-family: 'Akaya Telivigala', cursive;
     padding: 16px;
+    margin-left: 15px;
     font-size: 30px;
     border: none;
     color: black;
@@ -56,6 +63,7 @@ a{
     position: relative;
     display: inline-block;
     margin-left: 120px;
+    background-color: rgb(122, 240, 122);
   }
   
   .dropdown-content {
@@ -82,6 +90,7 @@ a{
   /* .dropdown:hover .dropbtn {background-color: #868b86;} */
 
   p{
+    grid-area: p;
       font-size: 25px;
      float: right;
       width: 900px;
@@ -93,13 +102,16 @@ a{
   img{
       float: left;
       margin-left: 40px;
+      grid-area: jordan-img;
+      margin-top: 20px;
   }
 
+
   .footer{
-      
+    grid-area: fo ;
       background-color: rgb(122, 240, 122);
       height: 130px;
-      margin-top: 500px;
+
     
   }
 
@@ -134,5 +146,35 @@ a{
     background-color: rgb(122, 240, 122);
     width: 40px;
       height: 30px;
+}
+
+
+ #container{
+
+    display: grid;
+    height: 90hv;
+    grid-template-columns:1670px ;
+    grid-template-rows:150px ;
+    grid-template-areas: 
+    "title"
+    "nav"
+    "p"
+    "jordan-img"
+    "fo";
+}
+
+
+
+@media (max-width:600px){
+  #container{
+    display: grid;
+    grid-template-columns: 600px 600px 600px;
+    grid-template-rows: 150px ;
+    grid-template-areas: 
+    "title title title title title title title "
+    "nav nav nav nav nav nav nav "
+    "jordan-img jordan-img jordan-img p p p p "
+    "fo fo fo fo fo fo fo";
+  }
 }
 

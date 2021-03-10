@@ -4,7 +4,11 @@ body{
 h1{
     text-align: center;
     margin-top: 40px;
-    
+    grid-area: title;
+}
+
+#list{
+  grid-area:nav;
 }
 
 ul {
@@ -73,13 +77,14 @@ a{
     flex-direction: column;
   float: left;
     margin-left: 20px;
-   
+    grid-area: jordan-img;
 }
 
 .left-img{
     padding-top: 15px;
     width: 352px;
     height:350px;
+   
 }
 
 #wadi-left{
@@ -91,6 +96,7 @@ a{
    padding-left: 13px;
    margin-right:380px;
    z-index:1;
+   grid-area: p;
   
 }
 
@@ -99,7 +105,7 @@ a{
     flex-direction: column;
   float: right;
     margin-right: 20px;
-
+    grid-area: jordan-img;
     z-index:-1;
 }
 
@@ -110,6 +116,7 @@ a{
 }
 
 .footer{
+  grid-area: fo;
           
     background-color:rgb(66, 58, 58);
     margin-top: 500px;
@@ -149,6 +156,9 @@ h3{
   height: 30px;
   padding-left: 15px;
 }
+
+
+
 
 
 
