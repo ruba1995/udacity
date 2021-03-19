@@ -7,108 +7,109 @@
 body{
     font-family: 'Akaya Telivigala', cursive;
     background-color: white;
+    width: 100%;
+  
+  
+   
+
   
 }
 
 h1{
-  grid-area: title;
+  /* grid-area: title; */
     text-align: center;
-    margin-top: 40px;
+    
 }
 
 ul {
-    background-color: rgb(122, 240, 122);
-   
-}
-
-#list{
-  display:nav;
-  
-
+  background-color:rgb(122, 240, 122);;
+ margin-top: 5%;
 }
 
 li{
-    display:inline-block;
-   
-    font-size: 30px;
-    margin-left: 200px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+  display:inline-block;
+ 
+  font-size: 30px;
+  margin-left: 200px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 
-  
+
 }
 
 
 
 a{
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 
 .dropbtn {
-   
-    font-family: 'Akaya Telivigala', cursive;
-    padding: 16px;
-    margin-left: 15px;
-    font-size: 30px;
-    border: none;
-    color: black;
-    margin-left: 120px;
-    background-color: rgb(122, 240, 122);
+ 
+  font-family: 'Akaya Telivigala', cursive;
+  padding: 16px;
+  margin-left: 15px;
+  font-size: 30px;
+  border: none;
+  color: black;
+  margin-left: 120px;
+  background-color:rgb(122, 240, 122);;
 
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    margin-left: 120px;
-    background-color: rgb(122, 240, 122);
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    margin-left: 120px;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* .dropdown:hover .dropbtn {background-color: #868b86;} */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 120px;
+  background-color:rgb(122, 240, 122);;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 120px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/* .dropdown:hover .dropbtn {background-color: #868b86;} */
 
   p{
-    grid-area: p;
+    /* grid-area: p; */
       font-size: 25px;
      float: right;
-      width: 900px;
-      height: 80px;
-      margin-right: 90px;
-      margin-top: 80px;
+      width: 45%;
+      height: 90%;
+      margin-right:22%;
+      margin-top: 6%;
+  
   }
 
   img{
       float: left;
-      margin-left: 40px;
-      grid-area: jordan-img;
-      margin-top: 20px;
+      margin-left: 3%;
+      /* grid-area: jordan-img; */
+      margin-top: 4%;
+     
   }
 
 
   .footer{
-    grid-area: fo ;
+   
       background-color: rgb(122, 240, 122);
       height: 130px;
 
@@ -148,33 +149,144 @@ a{
       height: 30px;
 }
 
+ 
+ 
+@media  screen and (max-width:550px){
+   body{
+   width: 0%;
+   height: 0%;
+    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+   }
 
- #container{
-
-    display: grid;
-    height: 90hv;
-    grid-template-columns:1670px ;
-    grid-template-rows:150px ;
-    grid-template-areas: 
-    "title"
-    "nav"
-    "p"
-    "jordan-img"
-    "fo";
-}
-
-
-
-@media (max-width:600px){
-  #container{
-    display: grid;
-    grid-template-columns: 600px 600px 600px;
-    grid-template-rows: 150px ;
-    grid-template-areas: 
-    "title title title title title title title "
-    "nav nav nav nav nav nav nav "
-    "jordan-img jordan-img jordan-img p p p p "
-    "fo fo fo fo fo fo fo";
+  h1{
+    text-align: center;
   }
+
+  
+ul {
+  max-width: 100%;
+  background-color: rgb(122, 240, 122);
+ margin-top: 25%;
 }
 
+
+
+li{
+  display:inline-block;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-right:15%;
+  margin-top: 10%;
+  margin-bottom: 20px;
+}
+
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.dropbtn {
+ 
+  font-family: 'Akaya Telivigala', cursive;
+ 
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border: none;
+  color: black;
+  margin-left:14%;
+  margin-right: 15px;
+  background-color: rgb(122, 240, 122);
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 120px;
+  background-color: rgb(122, 240, 122);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 120px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+img{
+  width: 98%;
+  margin-top:70%;
+  
+}
+
+p{
+   width:80%;
+   height: 80px;
+   margin-right: 20%;
+   margin-top: 10%;
+}
+
+.footer{
+   
+  background-color: rgb(122, 240, 122);
+  height: 130px;
+margin-top: 130%;
+
+}
+
+h3{
+  text-align: center;
+ padding-top: 20px;
+}
+
+.icons{
+display:flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
+#git{
+
+ background-color: rgb(122, 240, 122);
+
+ width: 40px;
+ height: 30px;
+ margin-top: 3%;
+}
+
+#linked{
+background-color: rgb(122, 240, 122);
+
+width: 40px;
+  height: 30px;
+  margin-top: 3%;
+}
+
+#facebook{
+background-color: rgb(122, 240, 122);
+width: 40px;
+  height: 30px;
+  margin-top: 3%;
+
+} 
+}
