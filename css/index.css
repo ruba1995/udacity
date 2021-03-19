@@ -98,14 +98,13 @@ a{
       margin-top: 6%;
   
   }
+  img {
+    float: left;
+    margin-left: 3%;
+    /* grid-area: jordan-img; */
+    margin-top: 4%;
+}
 
-  img{
-      float: left;
-      margin-left: 3%;
-      /* grid-area: jordan-img; */
-      margin-top: 4%;
-     
-  }
 
 
   .footer{
@@ -155,9 +154,9 @@ a{
    body{
    width: 0%;
    height: 0%;
-    overflow-x: hidden;
-    margin: 0%;
-    padding: 0%;
+   overflow-x: hidden;
+   margin: 0%;
+   padding: 0%;
    }
 
   h1{
@@ -168,7 +167,7 @@ a{
 ul {
   max-width: 100%;
   background-color: rgb(122, 240, 122);
- margin-top: 25%;
+  margin-top: 25%;
 }
 
 
@@ -249,7 +248,7 @@ p{
    
   background-color: rgb(122, 240, 122);
   height: 130px;
-margin-top: 130%;
+  margin-top: 130%;
 
 }
 
