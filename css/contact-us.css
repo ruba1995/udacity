@@ -1,0 +1,166 @@
+
+body{
+    font-family: 'Akaya Telivigala', cursive;
+    background-color: white;
+    width: 100%;
+  
+  
+   
+
+  
+}
+
+#list{
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px ;
+  grid-template-rows: 100px;
+}
+
+h1{
+  /* grid-area: title; */
+    text-align: center;
+    
+}
+
+ul {
+  background-color:rgb(132, 188, 214);
+ margin-top: 2%;
+}
+
+li{
+  display:inline-block;
+ 
+  font-size: 30px;
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+
+}
+
+
+
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.dropbtn {
+ 
+  font-family: 'Akaya Telivigala', cursive;
+  padding: 2px;
+  margin-left: 10px;
+  font-size: 30px;
+  border: none;
+  color: black;
+  
+  background-color:rgb(132, 188, 214);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  margin-left:2%;
+  background-color:rgb(132, 188, 214);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+ 
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+
+
+
+form{
+margin:5% 0 0 30%;
+font-size: 30px;
+
+}
+#ftext{
+    width: 66%;
+}
+
+#ftextarea{
+    width: 66%;
+    height: 80px;
+}
+
+
+#fbutton{
+    margin: 2% 0 0 55%;
+    width: 12%;
+    font-size: 20px;
+
+}
+
+
+#femail{
+  width:66%;
+}
+
+
+
+.footer{
+   
+  background-color: rgb(132, 188, 214);
+  height: 130px;
+
+
+}
+
+h3{
+  text-align: center;
+ padding-top: 20px;
+}
+
+.icons{
+display:flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
+#git{
+
+ background-color: rgb(132, 188, 214);
+
+ width: 40px;
+ height: 30px;
+}
+
+#linked{
+background-color: rgb(132, 188, 214);
+
+width: 40px;
+  height: 30px;
+}
+
+#facebook{
+background-color: rgb(132, 188, 214);
+width: 40px;
+  height: 30px;
+}
+

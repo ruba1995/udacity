@@ -14,7 +14,9 @@ padding-top: 25px;
 
 
 #list{
-  grid-area:nav;
+  display: grid;
+  grid-template-columns: 300px 320px 310px 310px ;
+  grid-template-rows: 140px;
 }
 
 ul{
