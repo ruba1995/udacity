@@ -1,12 +1,9 @@
-# udacity-Personal-Blog-Website
+# udacity 
 
-my first project in gaining front-end web development certificat from udacity 
+in this project , i used HTML , CSS ,JS 
+to create  interactive website
 
-this project present some places in jordan , recommended for visitors and tourist 
+-grid
+-media quiry 
+-DOM
 
-i used only #HTML and #CSS 
-
-- flex box
-- grid
-- css box (margin , pading , border )
--  HTML tags 
